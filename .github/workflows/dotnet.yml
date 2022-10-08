@@ -23,4 +23,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Execute tests
-      run: dotnet test ./tests --no-build --verbosity normal -p:ParallelizeTestCollections=false
+      run: dotnet test tests/CallAutomation.Contracts.Tests --no-build --verbosity normal -p:ParallelizeTestCollections=false
